@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+            .dropbtn {
+              background-color: #04AA6D;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+              cursor: pointer;
+            }
+            
+            .dropbtn:hover, .dropbtn:focus {
+              background-color: #3e8e41;
+            }
+            
+            .dropdown {
+              float: right;
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              overflow: auto;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              right: 0;
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown a:hover {background-color: #ddd;}
+            
+            .show {display: block;}
+            </style>
+        <title>Homepage </title>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Choose Package</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="HoneyMoon.html">HoneyMoon </a>
+              <a href="Adventure.html">Adventure</a>
+              <a href="WildLife.html">WildLife</a>
+            </div>
+        </div> 
+          
+          
+          
+          <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          </script>
+           
+        <center>
+            <h1>Make My Trip Websites </h1>
+        </center>
+        
+        <div class="mySlides fade">
+            <img src="images/front1.jpg" style="width:100%">
+        </div>
+        <div class="about-section">
+            <h1>About Us Page</h1>
+            <p>....This is the cheapest website  for the Engineers .</p>
+            <p>Because now a days Engineers are free ....</p>
+            <p> This is free for the Engineers Only ........</p>
+          </div>
+        <div>
+            <img src="images/front3.jpg" style="width:100%">
+        </div>
+        
+    </body>
+
+</html>
